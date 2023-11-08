@@ -60,4 +60,12 @@ app.put('/editar/:usuarioId',(req,res)=>{
     res.status(401).json({mensagem:"usuario nao encontrado"})
     })
 
-    
+app.delete('/deletar/:usuarioId', (req, res) => {
+        const usuarioId = req.params.usuarioId;
+        // falta inserir a logica para remover elementos aqui
+        });
+        
+app.listen(PORT, () => {
+            console.log(`Servidor rodando na porta ${PORT}`);
+            });
+            
